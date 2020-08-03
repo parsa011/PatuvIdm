@@ -42,8 +42,9 @@ namespace PatuvIDM.App
             // mnuMain
             // 
             this.mnuMain.BackColor = System.Drawing.SystemColors.Control;
+            this.mnuMain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.mnuFile});
-            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            this.mnuMain.Location = new System.Drawing.Point(0, 530);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -93,6 +94,7 @@ namespace PatuvIDM.App
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "مدیرت دانلود پاتوو";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
